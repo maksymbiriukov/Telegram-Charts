@@ -14,6 +14,9 @@
 		C1253DC022425010001B862C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1253DBE22425010001B862C /* LaunchScreen.storyboard */; };
 		C1253DCB22425011001B862C /* TelegramChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253DCA22425011001B862C /* TelegramChartsTests.swift */; };
 		C1253DD622425011001B862C /* TelegramChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253DD522425011001B862C /* TelegramChartsUITests.swift */; };
+		C1253DE72242522A001B862C /* chart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = C1253DE622425229001B862C /* chart_data.json */; };
+		C1253DE92242525B001B862C /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253DE82242525B001B862C /* ChartData.swift */; };
+		C1253DEB22425271001B862C /* JSONImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253DEA22425271001B862C /* JSONImporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		C1253DD122425011001B862C /* TelegramChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1253DD522425011001B862C /* TelegramChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramChartsUITests.swift; sourceTree = "<group>"; };
 		C1253DD722425011001B862C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1253DE622425229001B862C /* chart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chart_data.json; sourceTree = "<group>"; };
+		C1253DE82242525B001B862C /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		C1253DEA22425271001B862C /* JSONImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +103,10 @@
 		C1253DB42242500A001B862C /* TelegramCharts */ = {
 			isa = PBXGroup;
 			children = (
+				C1253DE4224251D4001B862C /* Sources */,
+				C1253DE3224251CB001B862C /* Resources */,
 				C1253DB52242500A001B862C /* AppDelegate.swift */,
-				C1253DB72242500A001B862C /* ViewController.swift */,
 				C1253DB92242500A001B862C /* Main.storyboard */,
-				C1253DBC22425010001B862C /* Assets.xcassets */,
 				C1253DBE22425010001B862C /* LaunchScreen.storyboard */,
 				C1253DC122425010001B862C /* Info.plist */,
 			);
@@ -123,6 +129,33 @@
 				C1253DD722425011001B862C /* Info.plist */,
 			);
 			path = TelegramChartsUITests;
+			sourceTree = "<group>";
+		};
+		C1253DE3224251CB001B862C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1253DE622425229001B862C /* chart_data.json */,
+				C1253DBC22425010001B862C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1253DE4224251D4001B862C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C1253DEA22425271001B862C /* JSONImporter.swift */,
+				C1253DB72242500A001B862C /* ViewController.swift */,
+				C1253DE5224251DB001B862C /* Charts */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C1253DE5224251DB001B862C /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				C1253DE82242525B001B862C /* ChartData.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +264,7 @@
 			files = (
 				C1253DC022425010001B862C /* LaunchScreen.storyboard in Resources */,
 				C1253DBD22425010001B862C /* Assets.xcassets in Resources */,
+				C1253DE72242522A001B862C /* chart_data.json in Resources */,
 				C1253DBB2242500A001B862C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1253DB82242500A001B862C /* ViewController.swift in Sources */,
+				C1253DEB22425271001B862C /* JSONImporter.swift in Sources */,
+				C1253DE92242525B001B862C /* ChartData.swift in Sources */,
 				C1253DB62242500A001B862C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
